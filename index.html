@@ -7,9 +7,9 @@
     <title>CodeConnect Summit 2026</title>
 </head>
 <body>
-    <header>
+    <header class="cabecalho">
         <h1>CodeConnect Summit 2026</h1>
-        <nav>
+        <nav class="menu">
             <a href="index.html">Inicio</a>
             <a href="about.html">Sobre</a>
             <a href="schedule.html">Programação</a>
@@ -17,43 +17,48 @@
         </nav>
     </header>
 
-    <main>
+    <main class="conteudo-principal">
         <section class="hero">
-            <h2>Bem-vindo ao CodeConnect Summit 2026!</h2>
-            <p>Participe de um dos maiores eventos de tecnologia da região e aprenda com profissionais do mercado.</p>
-            <button>Quero me inscrever</button>
-
-            <img src="hero-image.jpg" alt="Imagem do evento">
+            <div class="hero-text">
+                <h2>Bem-vindo ao CodeConnect Summit 2026!</h2>
+                <p>Participe de um dos maiores eventos de tecnologia da região e aprenda com profissionais do mercado.</p>
+                <button>Quero me inscrever</button>
+            </div>
+            
+            <div class="hero-image">
+                <img src="hero-image.jpg" alt="Imagem do evento">
+            </div>
         </section>
 
         <section class="sobre-evento">
-            <h2>Sobre o Evento:</h2>
-            <p>O CodeConnect Summit é um evento voltado para estudantes, desenvolvedores e profissionais da área de tecnologia. Durante dois dias serão realizadas palestras, workshops e networking com empresas do setor.</p>
+            <p class="destaque">O CodeConnect Summit é um evento voltado para estudantes, desenvolvedores e profissionais da área de tecnologia. Durante dois dias serão realizadas palestras, workshops e networking com empresas do setor.</p>
         </section>
 
-        <section class="programacao">
+        <section class="agenda-evento">
             <h2>Programação:</h2>
-            <div class="programacao-item">
-                <h3>Dia 1 - 10 de Março</h3>
-                <ul>
-                    <li>09:00 - Abertura e boas-vindas</li>
-                    <li>10:00 - Palestra: "Tendências em Desenvolvimento Web"</li>
-                    <li>12:00 - Almoço</li>
-                    <li>14:00 - Workshop: "Introdução ao React"</li>
-                    <li>16:00 - Painel de Discussão: "O Futuro da Inteligência Artificial"</li>
-                </ul>
-            </div>
+            <section class="programacao">
+                <div class="programacao-card">
+                    <h3 class="programacao-title">Dia 1 - 10 de Março</h3>
+                    <ul class="programacao-list">
+                        <li class="programacao-item">09:00 - Abertura e boas-vindas</li>
+                        <li class="programacao-item">10:00 - Palestra: "Tendências em Desenvolvimento Web"</li>
+                        <li class="programacao-item">12:00 - Almoço</li>
+                        <li class="programacao-item">14:00 - Workshop: "Introdução ao React"</li>
+                        <li class="programacao-item">16:00 - Painel de Discussão: "O Futuro da Inteligência Artificial"</li>
+                    </ul>
+                </div>
 
-            <div class="programacao-item">
-                <h3>Dia 2 - 11 de Março</h3>
-                <ul>
-                    <li>09:00 - Palestra: "Segurança em Aplicações Web"</li>
-                    <li>11:00 - Workshop: "Desenvolvimento Mobile com Flutter"</li>
-                    <li>13:00 - Almoço</li>
-                    <li>15:00 - Painel de Discussão: "Carreiras em Tecnologia"</li>
-                    <li>17:00 - Encerramento e sorteios</li>
-                </ul>
-            </div>
+                <div class="programacao-card">
+                    <h3 class="programacao-title">Dia 2 - 11 de Março</h3>
+                    <ul class="programacao-list">
+                        <li class="programacao-item">09:00 - Palestra: "Segurança em Aplicações Web"</li>
+                        <li class="programacao-item">11:00 - Workshop: "Desenvolvimento Mobile com Flutter"</li>
+                        <li class="programacao-item">13:00 - Almoço</li>
+                        <li class="programacao-item">15:00 - Painel de Discussão: "Carreiras em Tecnologia"</li>
+                        <li class="programacao-item">17:00 - Encerramento e sorteios</li>
+                    </ul>
+                </div>
+            </section>
         </section>
 
         <section class="local-evento">
@@ -98,7 +103,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="rodape">
         <p>Contato: contato@codeconnectsummit.com</p>
         <p>Telefone: (11) 1234-5678</p>
         <p>&copy; 2026 CodeConnect Summit. Todos os direitos reservados.</p>
