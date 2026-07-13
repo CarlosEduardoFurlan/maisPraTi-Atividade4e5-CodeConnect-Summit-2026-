@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CodeConnect Summit 2026</title>
+</head>
+<body id="inicio">
+    <header class="cabecalho">
+        <h1>CodeConnect Summit 2026</h1>
+        <nav class="menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-evento">Sobre</a>
+            <a href="#agenda-evento">Programação</a>
+            <a href="#rodape">Contato</a>
+        </nav>
+    </header>
+
+    <main class="conteudo-principal" id="conteudo-principal">
+        <section class="hero">
+            <div class="hero-text">
+                <h2>Bem-vindo ao CodeConnect Summit 2026!</h2>
+                <p>Participe de um dos maiores eventos de tecnologia da região e aprenda com profissionais do mercado.</p>
+                <button><a href="#inscricao">Quero me inscrever</a></button>
+            </div>
+            
+            <div class="hero-image">
+                <img src="hero-image.jpg" alt="Imagem do evento">
+            </div>
+        </section>
+
+        <section class="sobre-evento" id="sobre-evento">
+            <p class="destaque">O CodeConnect Summit é um evento voltado para estudantes, desenvolvedores e profissionais da área de tecnologia. Durante dois dias serão realizadas palestras, workshops e networking com empresas do setor.</p>
+        </section>
+
+        <section class="agenda-evento" id="agenda-evento">
+            <h2>Programação:</h2>
+            <section class="programacao">
+                <div class="programacao-card">
+                    <h3 class="programacao-title">Dia 1 - 10 de Março</h3>
+                    <ul class="programacao-list">
+                        <li class="programacao-item">09:00 - Abertura e boas-vindas</li>
+                        <li class="programacao-item">10:00 - Palestra: "Tendências em Desenvolvimento Web"</li>
+                        <li class="programacao-item">12:00 - Almoço</li>
+                        <li class="programacao-item">14:00 - Workshop: "Introdução ao React"</li>
+                        <li class="programacao-item">16:00 - Painel de Discussão: "O Futuro da Inteligência Artificial"</li>
+                    </ul>
+                </div>
+
+                <div class="programacao-card">
+                    <h3 class="programacao-title">Dia 2 - 11 de Março</h3>
+                    <ul class="programacao-list">
+                        <li class="programacao-item">09:00 - Palestra: "Segurança em Aplicações Web"</li>
+                        <li class="programacao-item">11:00 - Workshop: "Desenvolvimento Mobile com Flutter"</li>
+                        <li class="programacao-item">13:00 - Almoço</li>
+                        <li class="programacao-item">15:00 - Painel de Discussão: "Carreiras em Tecnologia"</li>
+                        <li class="programacao-item">17:00 - Encerramento e sorteios</li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+
+        <section class="local-evento">
+            <h2>Local do Evento:</h2>
+            <p>O CodeConnect Summit 2026 será realizado no Centro de Convenções TechCity, localizado na Av. Inovação, 1234, Cidade Tecnológica.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.1234567890123!2d-46.1234567890123!3d-23.1234567890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a123456789%3A0xabcdef1234567890!2sCentro%20de%20Conven%C3%A7%C3%B5es%20TechCity!5e0!3m2!1spt-BR!2sbr!4v1612345678901" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <section class="inscricao" id="inscricao">
+            <h2>Inscreva-se Agora:</h2>
+            <p>Garanta sua vaga no CodeConnect Summit 2026 preenchendo o formulário abaixo:</p>
+            <form action="submit_registration" id="formulario" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone">
+
+                <label for="empresa">Empresa/Instituição:</label>
+                <input type="text" id="empresa" name="empresa">
+
+                <label for="CEP">CEP:</label>
+                <input type="text" id="CEP" name="CEP" required>
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" required>
+
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado" required>
+
+                <label for="rua">Rua:</label>
+                <input type="text" id="rua" name="rua" required>
+
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro" required>
+
+                <label for="numero">Número:</label>
+                <input type="text" id="numero" name="numero" required>
+
+                <button type="submit">Enviar Inscrição</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodape" id="rodape">
+        <p>Contato: contato@codeconnectsummit.com</p>
+        <p>Telefone: (11) 1234-5678</p>
+        <p>&copy; 2026 CodeConnect Summit. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
