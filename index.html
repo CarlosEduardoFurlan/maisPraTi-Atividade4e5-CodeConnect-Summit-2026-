@@ -6,23 +6,23 @@
     <link rel="stylesheet" href="styles.css">
     <title>CodeConnect Summit 2026</title>
 </head>
-<body>
+<body id="inicio">
     <header class="cabecalho">
         <h1>CodeConnect Summit 2026</h1>
         <nav class="menu">
-            <a href="index.html">Inicio</a>
-            <a href="about.html">Sobre</a>
-            <a href="schedule.html">Programação</a>
-            <a href="contact.html">Contato</a>
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-evento">Sobre</a>
+            <a href="#agenda-evento">Programação</a>
+            <a href="#rodape">Contato</a>
         </nav>
     </header>
 
-    <main class="conteudo-principal">
+    <main class="conteudo-principal" id="conteudo-principal">
         <section class="hero">
             <div class="hero-text">
                 <h2>Bem-vindo ao CodeConnect Summit 2026!</h2>
                 <p>Participe de um dos maiores eventos de tecnologia da região e aprenda com profissionais do mercado.</p>
-                <button>Quero me inscrever</button>
+                <button><a href="#inscricao">Quero me inscrever</a></button>
             </div>
             
             <div class="hero-image">
@@ -30,11 +30,11 @@
             </div>
         </section>
 
-        <section class="sobre-evento">
+        <section class="sobre-evento" id="sobre-evento">
             <p class="destaque">O CodeConnect Summit é um evento voltado para estudantes, desenvolvedores e profissionais da área de tecnologia. Durante dois dias serão realizadas palestras, workshops e networking com empresas do setor.</p>
         </section>
 
-        <section class="agenda-evento">
+        <section class="agenda-evento" id="agenda-evento">
             <h2>Programação:</h2>
             <section class="programacao">
                 <div class="programacao-card">
@@ -67,10 +67,10 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.1234567890123!2d-46.1234567890123!3d-23.1234567890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a123456789%3A0xabcdef1234567890!2sCentro%20de%20Conven%C3%A7%C3%B5es%20TechCity!5e0!3m2!1spt-BR!2sbr!4v1612345678901" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </section>
 
-        <section class="inscricao">
+        <section class="inscricao" id="inscricao">
             <h2>Inscreva-se Agora:</h2>
             <p>Garanta sua vaga no CodeConnect Summit 2026 preenchendo o formulário abaixo:</p>
-            <form action="submit_registration" method="POST">
+            <form action="submit_registration" id="formulario" method="POST">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
 
@@ -95,6 +95,9 @@
                 <label for="rua">Rua:</label>
                 <input type="text" id="rua" name="rua" required>
 
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro" required>
+
                 <label for="numero">Número:</label>
                 <input type="text" id="numero" name="numero" required>
 
@@ -103,7 +106,7 @@
         </section>
     </main>
 
-    <footer class="rodape">
+    <footer class="rodape" id="rodape">
         <p>Contato: contato@codeconnectsummit.com</p>
         <p>Telefone: (11) 1234-5678</p>
         <p>&copy; 2026 CodeConnect Summit. Todos os direitos reservados.</p>
