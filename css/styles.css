@@ -4,6 +4,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    scroll-behavior: smooth; 
+}
+
 /* HEADER */
 
 .cabecalho{
@@ -80,7 +84,8 @@
     color: #666;
 }
 
-.hero-text button{
+.hero-text .btn-inscricao{
+    text-decoration: none;
     padding: 10px 20px;
     font-size: 16px;
     color: #fff;
@@ -91,12 +96,7 @@
     transition: background-color 0.3s ease;
 }
 
-.hero-text button a{
-    text-decoration: none;
-    color: #fff;
-}
-
-.hero-text button:hover{
+.hero-text .btn-inscricao:hover{
     background-color: #0056b3;
 }
 
@@ -260,11 +260,13 @@
     gap: 10px;
 }
 
+/* PAGINA DE CONFIRMACAO DE INSCRICAO */
 
-
-
-
-
-
-
-
+.card-confirmacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
