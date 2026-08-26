@@ -47,5 +47,5 @@ const formulario = document.querySelector('#formulario');
 
 formulario.addEventListener('submit', (event) => {
     event.preventDefault(); 
-    window.location.href = "confirmacao-inscricao.html"; 
+    window.location.href = "pages/confirmacao-inscricao.html";
 });
